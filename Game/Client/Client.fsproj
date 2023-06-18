@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Compile Include="Program.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FSharp.Json" Version="0.4.1" />
+      <PackageReference Include="LiteNetLib" Version="1.1.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj" />
+      <ProjectReference Include="..\Game\Game.fsproj" />
+    </ItemGroup>
+
+</Project>
